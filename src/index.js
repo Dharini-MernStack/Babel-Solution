@@ -1,7 +1,7 @@
-const planetsList = document.querySelector('#planets');
+enceconst planetsList = document.querySelector('#planets');
 
 const planetIcon = str => `💫 ${str}`;
-const upperCase = str => `${str.charAt(0).toUpperCase()}${str.slice(1)}`;
+const sentenceCase = str => `${str.charAt(0).toUpperCase()}${str.slice(1)}`;
 
 const planets = [
   'mercury',
@@ -15,5 +15,5 @@ const planets = [
 ];
 
 planets.forEach(planet => {
-  planetsList.innerHTML += `<li>${planet |> upperCase |> planetIcon}</li>`;
+  planetsList.innerHTML += `<li>${planet |> sentenceCase |> planetIcon}</li>`;
 });
