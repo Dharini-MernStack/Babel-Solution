@@ -1,4 +1,4 @@
-enceconst planetsList = document.querySelector('#planets');
+const planetsList = document.querySelector('#planets');
 
 const planetIcon = str => `💫 ${str}`;
 const sentenceCase = str => `${str.charAt(0).toUpperCase()}${str.slice(1)}`;
